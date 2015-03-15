@@ -173,7 +173,7 @@ summary(activity)
 ```
 
 
-2. **Devise a strategy for filling in all of the missing values in the dataset**
+2 & 3. **Devise a strategy for filling in all of the missing values in the dataset**
 For example, mean/median for that day, mean for that 5-minute interval, etc:
 
 - **Imputing Strategy:** Use StepMean for the interval from 'step_interval' 
@@ -182,9 +182,9 @@ to be most influential, and most representative of missing data.
 
 This strategy could lead to bias if the particular day turns out to be more
 important, but is a reasonable strategy for this stage of the exploration, 
-especially given the apparent influence shown in the time-series plot.
+especially given the apparent influence shown in the time-series plot:
 
-3. **Create a new dataset equal to the original but missing data filled in.**
+-**Code** showing how to create a new dataset equal to the original but missing data filled in, using this strategy:
 
 ```{r imputingloop}
 
