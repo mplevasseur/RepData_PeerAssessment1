@@ -32,15 +32,6 @@ Reading in and inspecting the .csv file from the working directory:
 activity <- read.csv("activity.csv", header = TRUE)
 ```
 
-```
-## Warning in file(file, "rt"): cannot open file 'activity.csv': No such file
-## or directory
-```
-
-```
-## Error in file(file, "rt"): cannot open the connection
-```
-
 The variables in this dataset are:
 
 - **steps:** Number of steps taken in a 5-minute interval (missing values = NA)  
